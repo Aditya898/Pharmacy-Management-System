@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.Aditya.PharmacyManagement.Repositories.DrugRepository"/>
+    <fullyQualifiedTypeName name="com.Aditya.PharmacyManagement.Model.Drug"/>
+    <fullyQualifiedTypeName name="com.Aditya.PharmacyManagement.Service.DrugService"/>
+</qualifiedTypeNameHistroy>
