@@ -9,18 +9,14 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.Aditya</groupId>
-	<artifactId>OrderManagement</artifactId>
+	<artifactId>DiscoveryServer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>OrderManagement</name>
+	<name>DiscoveryServer</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-mongodb</artifactId>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -40,7 +36,7 @@
 		
 		<dependency>
     <groupId>org.springframework.cloud</groupId>
-    <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+    <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
     <version>3.1.6</version>
 </dependency>
 
