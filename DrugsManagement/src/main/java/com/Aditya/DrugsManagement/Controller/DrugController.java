@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.*;
 import com.Aditya.DrugsManagement.Model.Drug;
 import com.Aditya.DrugsManagement.Service.DrugService;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Optional;
 
@@ -43,4 +45,12 @@ public class DrugController {
     public boolean deleteDrug(@PathVariable String id) {
         return drugService.deleteDrug(id);
     }
+    
+    
+    @GetMapping("/expiry/{expiryDate}")
+    public List<Drug> getDrugsByExpiryDate(@PathVariable("expiryDate") String expiryDate) {
+        LocalDate date = LocalDate.parse(expiryDate, DateTimeFormatter.ISO_DATE);
+        return drugService.getDrugsByExpiryDate(date);
+    }
+
 }

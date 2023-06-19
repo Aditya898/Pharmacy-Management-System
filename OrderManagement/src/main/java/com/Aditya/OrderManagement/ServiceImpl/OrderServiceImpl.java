@@ -19,11 +19,29 @@ public class OrderServiceImpl implements OrderService {
         this.orderRepository = orderRepository;
     }
 
+//    @Override
+//    public Order createOrder(Order order) {
+//        
+//        return orderRepository.save(order);
+//    }
+    
+    
+    
     @Override
     public Order createOrder(Order order) {
-        
+        order.setOrderId(generateSequentialOrderId());
         return orderRepository.save(order);
     }
+
+    private String generateSequentialOrderId() {
+        List<Order> allOrders = orderRepository.findAll();
+        int nextId = allOrders.size() + 1;
+        return "ORD" + String.format("%04d", nextId);
+    }
+
+    
+    
+    
     
     
     @Override

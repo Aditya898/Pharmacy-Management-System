@@ -1,5 +1,6 @@
 package com.Aditya.DrugsManagement.Service;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
@@ -11,4 +12,5 @@ public interface DrugService {
     Drug createDrug(Drug drug);
     Drug updateDrug(String id, Drug updatedDrug);
     boolean deleteDrug(String id);
+    List<Drug> getDrugsByExpiryDate(LocalDate expiryDate);
 }

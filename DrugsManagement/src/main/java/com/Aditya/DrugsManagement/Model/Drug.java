@@ -1,5 +1,7 @@
 package com.Aditya.DrugsManagement.Model;
 
+import java.time.LocalDate;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -11,6 +13,7 @@ public class Drug {
     private String description;
     private double price;
     private int quantity;
+    private LocalDate expiryDate;
 
     // Constructors, getters, and setters
 
@@ -22,6 +25,7 @@ public class Drug {
         this.description = description;
         this.price = price;
         this.quantity = quantity;
+        this.expiryDate = expiryDate;
     }
 
 	public String getId() {
@@ -63,6 +67,15 @@ public class Drug {
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
 	}
+	
+	
+	public LocalDate getExpiryDate() {
+        return expiryDate;
+    }
+
+    public void setExpiryDate(LocalDate expiryDate) {
+        this.expiryDate = expiryDate;
+    }
 
 	
 
