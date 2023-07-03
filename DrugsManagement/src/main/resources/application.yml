@@ -1,0 +1,7 @@
+logging:
+  level:
+    org.springframework.web: ERROR
+    com.Aditya.DrugManagement: INFO
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+  file: C:Users/User/Desktop/Case Study/PharmacyManagementSystem/logs/api1.log

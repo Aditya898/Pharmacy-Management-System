@@ -1,0 +1,14 @@
+<app-navbar></app-navbar>
+
+<app-homepage></app-homepage>
+
+<app-footer></app-footer>
+<app-singnup></app-singnup>
+<app-navbar (signUpClicked)="toggleSignUpForm()"></app-navbar>
+<app-singnup *ngIf="showSignUpForm"></app-singnup>
+
+
+
+
+
+

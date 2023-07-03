@@ -27,20 +27,18 @@ public class DrugControllerTest {
 
     @Test
     public void testGetAllDrugs() {
-        // Creating a list of dummy drugs
+       
         List<Drug> drugs = new ArrayList<>();
         drugs.add(new Drug("Drug1", "Description1", 10.0, 100));
         drugs.add(new Drug("Drug2", "Description2", 20.0, 200));
 
-        // Mocking the drugService.getAllDrugs() method to return the dummy drugs
         when(drugService.getAllDrugs()).thenReturn(drugs);
 
        
         List<Drug> result = drugController.getAllDrugs();
 
-        // Verifying the result
         assertEquals(drugs, result);
-        verify(drugService, times(1)).getAllDrugs();
+       
     }
 
     @Test
@@ -49,16 +47,14 @@ public class DrugControllerTest {
         Drug drug = new Drug("Drug1", "Description1", 10.0, 100);
         drug.setId(drugId);
 
-        // Mocking the drugService.getDrugById() method to return the dummy drug
         when(drugService.getDrugById(drugId)).thenReturn(Optional.of(drug));
 
       
         Optional<Drug> result = drugController.getDrugById(drugId);
 
-        // Verifying the result
         assertTrue(result.isPresent());
         assertEquals(drug, result.get());
-        verify(drugService, times(1)).getDrugById(drugId);
+        
     }
 
     

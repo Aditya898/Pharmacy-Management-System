@@ -21,26 +21,32 @@ public class DrugController {
         this.drugService = drugService;
     }
 
+    
+    //Get list of all the drugs
     @GetMapping
     public List<Drug> getAllDrugs() {
         return drugService.getAllDrugs();
     }
 
+    //Get a specific drug by proving id as a input
     @GetMapping("/{id}")
     public Optional<Drug> getDrugById(@PathVariable String id) {
         return drugService.getDrugById(id);
     }
 
+    //create a new drug
     @PostMapping
     public Drug createDrug(@RequestBody Drug drug) {
         return drugService.createDrug(drug);
     }
 
+    //update a existing drug
     @PutMapping("/{id}")
     public Drug updateDrug(@PathVariable String id, @RequestBody Drug updatedDrug) {
         return drugService.updateDrug(id, updatedDrug);
     }
 
+   //delete a drug
     @DeleteMapping("/{id}")
     public boolean deleteDrug(@PathVariable String id) {
         return drugService.deleteDrug(id);
