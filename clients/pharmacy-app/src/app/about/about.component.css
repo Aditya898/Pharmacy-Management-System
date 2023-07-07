@@ -1,0 +1,75 @@
+.About-us {
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  
+}
+
+h1 {
+  color: red;
+  font-size: 35px;
+}
+
+h3 {
+
+    font-size: 20px;
+  }
+
+img {
+  border-radius: 50%;
+  height: auto; /* Adjusted to maintain aspect ratio */
+  width: 10%; /* Changed to a fixed width */
+  max-width: 100px; /* Added maximum width to prevent distortion */
+}
+
+p {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+a {
+  padding: 10px 20px; /* Reduced padding for better alignment */
+  text-align: center;
+  text-decoration: none;
+  margin: 5px;
+  background: #3B5998;
+  color: white;
+  border-radius: 8px;
+  font-size: 20px; /* Reduced font size for better visibility */
+}
+
+.column {
+  width: 33.33%; /* Changed to equal width for better alignment */
+  margin-bottom: 16px;
+  padding: 0 8px;
+  box-sizing: border-box; /* Added to include padding in width calculation */
+  float: left;
+}
+
+.card {
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  background-color: rgb(180, 234, 241);
+  padding: 10px; /* Added padding for better spacing */
+  text-align: center; /* Centering content in card */
+}
+
+.card img {
+  height: 50px;
+  width: 100%; /* Adjusted to fill the card */
+  object-fit: contain; /* Added to maintain aspect ratio */
+}
+
+
+.fa {
+    font-size: 8px; /* Adjust the font size to your desired value */
+  }
+
+  .follow{
+    margin-top:1%;
+    margin-bottom: -17%;
+    padding-bottom: 1%;
+  }
+  

@@ -1,11 +1,11 @@
 	package com.Aditya.ProfileManagement.Repository;
 	
-	import com.Aditya.ProfileManagement.Model.User;
-	import org.springframework.data.mongodb.repository.MongoRepository;
-	import org.springframework.stereotype.Repository;
-	
-	@Repository
-	public interface UserRepository extends MongoRepository<User, String> {
-	    User findByUsername(String username);
-	}
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+import com.Aditya.ProfileManagement.Model.User;
+
+public interface UserRepository extends MongoRepository<User, String> {
+    User findByUsername(String username);
+}
+
 	

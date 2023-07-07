@@ -8,10 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'pharmacy-app';
  
-  showSignUpForm = false;
-
-  toggleSignUpForm() {
-    this.showSignUpForm = !this.showSignUpForm;
-  }
 
 }
